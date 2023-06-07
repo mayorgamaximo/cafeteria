@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*jA0gzfDcuOvOtKO1FfIMjg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 150px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+div {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    color: rgb(218, 183, 141);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.titulo {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(224, 165, 93);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacto {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(224, 165, 93);
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 7%;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(0, 0, 0, 0.7);
+    width: 90%;
+    border-radius: 30px;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.relleno {
+    padding: 30px;
+    text-align: justify;
+    color: rgb(218, 183, 141);
+}
+
+.relleno-contacto {
+    padding: 10px;
+    text-align: justify;
+    color: rgb(218, 183, 141);
+}
+
+
+
+nav ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-size: 20px;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+
+nav ul li a {
+    display: block;
+    padding: 30px;
+    color: rgb(219, 184, 142);
+    text-decoration: none;
+}
+
+.imagen {
+    border-radius: 10%;
+    padding: 10px;
+    height: 250PX;
+    width: 300px;
+}
+
+article {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.articulos {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    padding: 10px;
+    height: 250PX;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+
+.menu {
+
+    margin-bottom: 30px;
+}
+
+img {
+    height: 700px;
+    width: 700px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.932);
+
+}
