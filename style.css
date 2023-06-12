@@ -1,17 +1,22 @@
 html {
     scroll-behavior: smooth;
-}
+}       
 
 * {
+    font-family: Times New Roman PS Pro Bold;
     padding: 0%;
     margin: 0%;
 }
 
-
-
-body {
-    font-family: 'Times New Roman', Times, serif;
+.curso{
+    align-items: center;
+    margin: 10px;
 }
+audio{
+    margin: 20px;
+}
+
+
 
 .container {
     background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*jA0gzfDcuOvOtKO1FfIMjg.jpeg");
@@ -21,14 +26,14 @@ body {
 }
 
 main {
-    font-family: 'Times New Roman', Times, serif;
+   
     margin-top: 150px;
     width: 80%;
     margin-left: 10%;
 }
 
 div {
-    font-family: 'Times New Roman', Times, serif;
+    
     display: flex;
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -40,7 +45,6 @@ div {
 }
 
 .titulo {
-    font-family: 'Times New Roman', Times, serif;
     color: rgb(224, 165, 93);
     margin-bottom: 10px;
     display: flex;
@@ -49,7 +53,6 @@ div {
 }
 
 .contacto {
-    font-family: 'Times New Roman', Times, serif;
     color: rgb(224, 165, 93);
     margin-bottom: 10px;
     display: flex;
@@ -67,7 +70,6 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
     background: rgba(0, 0, 0, 0.7);
     width: 90%;
     border-radius: 30px;
@@ -81,7 +83,6 @@ nav ul {
     justify-content: center;
     gap: 20px;
 }
-
 .relleno {
     padding: 30px;
     text-align: justify;
@@ -97,7 +98,7 @@ nav ul {
 
 
 nav ul li {
-    font-family: Arial, Helvetica, sans-serif;
+ 
     position: relative;
     font-size: 20px;
     border-radius: 20px;
@@ -115,13 +116,21 @@ nav ul li a {
 .imagen {
     border-radius: 10%;
     padding: 10px;
-    height: 250PX;
-    width: 300px;
+    height: 90%;
+    width: 100%;
+    transition: 0.5s;
+}
+.imagen:hover{
+    transform: scale(1.2);
 }
 
-article {
-    margin-left: 30px;
+.productos{
+    width: 400px;
+}
+
+article {   
     text-align: center;
+    margin: 20px;
 }
 
 .articulos {
@@ -145,8 +154,8 @@ article {
 }
 
 img {
-    height: 700px;
-    width: 700px;
+    height: 55%;
+    width: 40%;
 }
 
 footer {
