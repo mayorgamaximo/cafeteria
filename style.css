@@ -158,7 +158,7 @@ img {
 
 footer {
     margin-top: 10px;
-    background-color: #282828;
+    background-color: #282828da;
     display: flex;
     flex-direction: row;
 }
