@@ -6,51 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/register</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="icon" href="https://www.shareicon.net/data/256x256/2015/09/21/644139_pin_512x512.png">
+    
 </head>
 
-<body class="container">
+
+
+
+
+<body>
     <header>
-        <a href="cafeteria.html"><img class="logo imagen" src="https://img.freepik.com/vector-gratis/insignia-cafeteria-estilo-vintage_1176-95.jpg"></a>
+        <a href="index.html"><img class="logo" src="https://img.freepik.com/vector-gratis/insignia-cafeteria-estilo-vintage_1176-95.jpg"></a>
     </header>
 
-    <main>
-        <div class="registro">
-            <h1 class="titulo">Registro</h1>
-            <article>
-                <h3>Nombre</h3>
-                <input type="text">
-                <h3>Numero de telefono</h3>
-                <input type="text">
-                <h3>Mail</h3>
-                <input type="text">
-                <h3>Contraseña</h3>
-                <input type="password">
+<div class="login">
+    <article>
+        <h1 class="titulo">Log in</h1>
+        
+            <h3>Mail</h3>
+            <input type="text">
 
-                <input type="submit" class="enviar">
-            </article>
-        </div>
+            <h3>Contraseña</h3>
+            <input type="password">
+            <br>
+            <input type="submit" class="enviar">
 
-        <div class="login">
-            <h1 class="titulo">Login</h1>
-            <article>
-                <h3>Mail</h3>
-                <input type="text">
+        </article>
+        <button id="showDivsButton">register</button>
+</div>
 
-                <h3>Contraseña</h3>
-                <input type="password">
 
-                <input type="submit" class="enviar">
+<div id="divContainer">
 
-            </article>
-        </div>
-    </main>
+    <a href="index.html"><img class="logo x" src="https://img.freepik.com/vector-gratis/insignia-cafeteria-estilo-vintage_1176-95.jpg"></a>
+    <article>
+    <h1>register</h1>
+ 
+    
+        <h3>Mail</h3>
+        <input type="text">
 
-    <footer>
+        <h3>Contraseña</h3>
+        <input type="password">
+        <br>
+        <input type="submit" class="enviar">
 
-    </footer>
-
+    </article>
+  
+  <button id="closeButton">login</button>
+  
+</div>
+<script src="index.js"></script>
 </body>
-
 </html>
