@@ -1,4 +1,4 @@
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,27 +16,32 @@
     <article>
     <h1>register</h1>
  
+    <form action="registro.php" method="post">
     
         <h3>Nombre</h3>
-        <center><input type="text"></center>
-
+        <center><input name="nombre" type="text" method="post"></center>
+        
         <h3>Apellido</h3>
-        <center><input type="text"></center>
+        <center><input name="apellido" type="text" method="post"></center>
         
         <h3>Telefono</h3>
-        <center><input type="number"></center>
+        <center><input name="telefono" type="number" method="post"></center>
         
         <h3>Username</h3>
-        <center><input type="text"></center>
+        <center><input name="username" type="text" method="post"></center>
         
         <h3>Mail</h3>
-        <center><input type="text"></center>
+        <center><input name="mail" type="text" method="post"></center>
 
         <h3>Contraseña</h3>
-        <center><input type="password"></center>
+        <center><input name="contrasena" type="password" method="post"></center>
+
+        <center><input type="submit" name="registro" class="enviar"></center>
+
         <h3>¿tienes una cuenta?<br><a style="color: blue;" href="login.html">haz clic aqui</a></h3>
         <br>
-        <center><input type="submit" class="enviar"></center>
+    
+    </form>
 
     </article>
   
