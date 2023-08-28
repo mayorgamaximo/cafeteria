@@ -1,5 +1,10 @@
 <?php 
-$conexion=new mysqli('localhost','phpmyadmin','RedesInformaticas','db_mayorga');
+
+$servername="localhost";
+$username="phpmyadmin";
+$password="RedesInformaticas";
+$dbname= "db_mayorga";
+$conexion=new mysqli($servernameame,$username,$password,$dbname);
 
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
@@ -8,11 +13,22 @@ $username=$_POST['username'];
 $mail=$_POST['mail'];
 $contrasena=$_POST['contrasena'];
 
-if(!$conexion){
-    die('error de conexion'.mysql_error());
+
+
+
+$sql = "SELECT COUNT(*) as total FROM registro WHERE mail = '$mail'";
+$resultado = $conexion->query($sql);
+$fila = $resultado->fetch_assoc();
+
+if ($fila["total"] > 0) {
+    
+} else {
+    
+    $sql = "INSERT INTO registro ( `nombre`, `apellido`, `telefono`, `username`,`mail`,`contraseña`) VALUES ( ' $nombre', '$apellido', '$telefono', '$username','$mail','$contrasena');";
 }
 
-$sql = "INSERT INTO registro (`nombre`, `apellido`, `telefono`, `username`,`mail`,`contrasena`) VALUES ('$nombre', '$apellido', '$telefono', '$username','$mail','$contrasena');";
+
+
 
 if(mysqli_query($conexion, $sql)){
     $success = "el ingreso ha sido satisfactorio";

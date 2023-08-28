@@ -99,12 +99,37 @@
         <h2 class="relleno-contacto">Instagram: @maxi_mayorga</h2>
         <h2 class="relleno-contacto">Email: xxxxxxx@gmail.com</h2>
         </div>
+        
+        <?php
+        $servername="localhost";
+        $username="phpmyadmin";
+        $password="RedesInformaticas";
+        $dbname= "db_mayorga";
+        $conexion=new mysqli($servernameame,$username,$password,$dbname);
+            
+        $sql = "SELECT contador FROM visitas  = '$contador'";
+        $contador = $contador + 1;
+        echo $contador;
+        $fechavisita=date("y/m/d");
+        $sql = "INSERT INTO visitas (`contador`,`fecha`) VALUES ('$contador','$fechavisita');";
+        
+
+        if(mysqli_query($conexion, $sql)){
+            $success = "el ingreso ha sido satisfactorio";
+        }
+        else{
+            echo "Error de ingreso ".mysqli_error($conexion);    
+        }
+
+        ?>
 
         <div class="musica">
 
             <iframe src="https://open.spotify.com/embed/playlist/6P75RG9yKcgxUBeHUcccrv?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
         </div>
+
+
     </footer>
 
 </body>
