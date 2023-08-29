@@ -63,6 +63,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 
@@ -152,10 +153,7 @@ article {
     margin-bottom: 30px;
 }
 
-img {
-    height: 55%;
-    width: 40%;
-}
+
 
 footer {
     margin-top: 10px;
@@ -192,4 +190,15 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.visitas{
+    display: flex;
+    flex-direction: row;
+    
+  
+}
+.visitas img{
+    height: 20px;
+    width: auto;
 }

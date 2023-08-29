@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxi cafeteria</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://www.shareicon.net/data/256x256/2015/09/21/644139_pin_512x512.png">
 </head>
 
@@ -16,6 +16,31 @@
 
     <header>
         <img class="logo" src="https://img.freepik.com/vector-gratis/insignia-cafeteria-estilo-vintage_1176-95.jpg">
+        <span class="visitas">
+        <img src="https://cdn-icons-png.flaticon.com/256/38/38553.png" >
+        <?php
+        $servername = "localhost";
+        $username = "phpmyadmin";
+        $password = "RedesInformaticas";
+        $dbname = "db_mayorga";
+        $conexion = new mysqli($servername, $username, $password, $dbname);
+
+        $sql = "SELECT contador FROM visitas WHERE visitas.id = 1";
+        $resultado = mysqli_query($conexion, $sql)  ;
+        $contador = mysqli_fetch_assoc($resultado)['contador'];
+        $contador = $contador + 1;
+
+        $fechavisita = date("y/m/d");
+        $sql = "UPDATE visitas SET contador = '$contador' WHERE visitas.id = 1";
+
+        if (mysqli_query($conexion, $sql)) {
+        $success = "El ingreso ha sido satisfactorio";
+        } else {
+        echo "Error de ingreso: " . mysqli_error($conexion);
+        }
+        echo $contador;
+        ?>
+        </span>
 
         <nav>
             <ul>
@@ -100,28 +125,6 @@
         <h2 class="relleno-contacto">Email: xxxxxxx@gmail.com</h2>
         </div>
         
-        <?php
-        $servername="localhost";
-        $username="phpmyadmin";
-        $password="RedesInformaticas";
-        $dbname= "db_mayorga";
-        $conexion=new mysqli($servernameame,$username,$password,$dbname);
-            
-        $sql = "SELECT contador FROM visitas  = '$contador'";
-        $contador = $contador + 1;
-        echo $contador;
-        $fechavisita=date("y/m/d");
-        $sql = "INSERT INTO visitas (`contador`,`fecha`) VALUES ('$contador','$fechavisita');";
-        
-
-        if(mysqli_query($conexion, $sql)){
-            $success = "el ingreso ha sido satisfactorio";
-        }
-        else{
-            echo "Error de ingreso ".mysqli_error($conexion);    
-        }
-
-        ?>
 
         <div class="musica">
 
