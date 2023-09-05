@@ -8,6 +8,7 @@ $password="RedesInformaticas";
 $dbname= "db_mayorga";
 $conexion=new mysqli($servernameame,$username,$password,$dbname);
 
+
 $mail=$_POST['mail'];
 $contrasena=$_POST['contrasena'];
 

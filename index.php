@@ -60,7 +60,7 @@ session_start();
                 <li class="zoom"><a href="logins.php">log in</a></li>
                 <?php
                 if($_SESSION["infosesion"] == "exito" ){
-                    <li class="zoom"><a href="comentarios.php">comentarios</a></li>
+                    echo "<li class=\"zoom\"><a href=\"comentarios.php\">comentarios</a></li>";
                 }
                 ?>
 
