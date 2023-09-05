@@ -57,10 +57,12 @@ session_start();
                 <li class="zoom"><a href="#menu">Menu</a></li>
                 <li class="zoom"><a href="#cursos">Cursos</a></l>
                 <li class="zoom"><a href="#contactos">Contactos</a></li>
-                <li class="zoom"><a href="logins.php">log in</a></li>
+                
                 <?php
                 if($_SESSION["infosesion"] == "exito" ){
                     echo "<li class=\"zoom\"><a href=\"comentarios.php\">comentarios</a></li>";
+                }else{
+                    echo "<li class=\"zoom\"><a href=\"logins.php\">log in</a></li>";
                 }
                 ?>
 
