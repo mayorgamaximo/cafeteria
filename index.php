@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,29 +22,33 @@
     <header>
         <img class="logo" src="https://img.freepik.com/vector-gratis/insignia-cafeteria-estilo-vintage_1176-95.jpg">
         <span class="visitas">
-        <img src="https://cdn-icons-png.flaticon.com/256/38/38553.png" >
-        <?php
-        $servername = "localhost";
-        $username = "phpmyadmin";
-        $password = "RedesInformaticas";
-        $dbname = "db_mayorga";
-        $conexion = new mysqli($servername, $username, $password, $dbname);
 
-        $sql = "SELECT contador FROM visitas WHERE visitas.id = 1";
-        $resultado = mysqli_query($conexion, $sql)  ;
-        $contador = mysqli_fetch_assoc($resultado)['contador'];
-        $contador = $contador + 1;
+            <img src="https://cdn-icons-png.flaticon.com/256/38/38553.png" >
+            
+            <?php
+                $servername = "localhost";
+                $username = "phpmyadmin";
+                $password = "RedesInformaticas";
+                $dbname = "db_mayorga";
+                $conexion = new mysqli($servername, $username, $password, $dbname);
 
-        $fechavisita = date("y/m/d");
-        $sql = "UPDATE visitas SET contador = '$contador' WHERE visitas.id = 1";
+                $sql = "SELECT contador FROM visitas WHERE visitas.id = 1";
+                $resultado = mysqli_query($conexion, $sql)  ;
+                $contador = mysqli_fetch_assoc($resultado)['contador'];
+                $contador = $contador + 1;
 
-        if (mysqli_query($conexion, $sql)) {
-        $success = "El ingreso ha sido satisfactorio";
-        } else {
-        echo "Error de ingreso: " . mysqli_error($conexion);
-        }
-        echo $contador;
-        ?>
+                $fechavisita = date("y/m/d");
+                $sql = "UPDATE visitas SET contador = '$contador' WHERE visitas.id = 1";
+
+                if (mysqli_query($conexion, $sql)) {
+                $success = "El ingreso ha sido satisfactorio";
+                } else {
+                echo "Error de ingreso: " . mysqli_error($conexion);
+                }
+                
+                echo $contador;
+            ?>
+
         </span>
 
         <nav>
@@ -48,7 +57,13 @@
                 <li class="zoom"><a href="#menu">Menu</a></li>
                 <li class="zoom"><a href="#cursos">Cursos</a></l>
                 <li class="zoom"><a href="#contactos">Contactos</a></li>
-                <li class="zoom"><a href="login.html">log in</a></li>
+                <li class="zoom"><a href="logins.php">log in</a></li>
+                <?php
+                if($_SESSION["infosesion"] == "exito" ){
+                    <li class="zoom"><a href="comentarios.php">comentarios</a></li>
+                }
+                ?>
+
             </ul>
         </nav>
     </header>
@@ -63,11 +78,10 @@
                 <article>
                     <h2>Medialunas </h2>
                     <img class="imagen"
-                        src="https://www.hogarmania.com/archivos/202101/cocina-recetas-como-hacer-croissants-cruasanes-caseros-668x400x80xX.jpg">
+                        src="https://cuk-it.com/wp-content/uploads/2021/06/thumb02-1024x576.jpg">
 
-                </article>
-
-                <article>
+            </article>
+                <article> 
 
                     <h2>Expresso</h2>
                     <img class="imagen"
