@@ -16,7 +16,7 @@ session_start();
     <link rel="icon" href="https://www.shareicon.net/data/256x256/2015/09/21/644139_pin_512x512.png">
 </head>
 
-<body class="container">
+<body class="contariner">
 
 
     <header>
@@ -61,6 +61,7 @@ session_start();
                 <?php
                 if($_SESSION["infosesion"] == "exito" ){
                     echo "<li class=\"zoom\"><a href=\"comentarios.php\">comentarios</a></li>";
+                    echo "<li class=\"zoom\"><a href=\"logout.php\">cerrar sesion</a></li>";
                 }else{
                     echo "<li class=\"zoom\"><a href=\"logins.php\">log in</a></li>";
                 }
@@ -72,7 +73,7 @@ session_start();
 
     <main>
 
-        <div>
+        <div class="div-index">
             <h1 id="inicio" class="titulo"> Productos destacados </h1>
 
             <article class="articulos">
@@ -80,7 +81,7 @@ session_start();
                 <article>
                     <h2>Medialunas </h2>
                     <img class="imagen"
-                        src="https://cuk-it.com/wp-content/uploads/2021/06/thumb02-1024x576.jpg">
+                        src="https://alicante.com.ar/uploads/recetas/2663_receta.jpg">
 
             </article>
                 <article> 
@@ -114,14 +115,14 @@ session_start();
         </div>
 
 
-        <div>
+        <div class="div-index">
             <h1 id="menu" class="titulo">Menu</h1>
             <article class="menu">
                 <img src="https://img.restaurantguru.com/r4ae-Cafe-Martinez-menu-2021-09-1.jpg">
             </article>
         </div>
 
-        <div class="curso">
+        <div class="curso div-index">
             <h1 id="cursos" class="titulo">Cursos</h1>
             <iframe class="curso" width="560" height="315" src="https://www.youtube.com/embed/68HQXBw557k"
                 title="YouTube video player" frameborder="0"
@@ -134,7 +135,7 @@ session_start();
 
     <footer>
 
-        <div class="contactos">
+        <div class="contactos div-index">
         <h1 id="contactos" class="contacto">Contactos</h1>
         <h2 class="relleno-contacto">Numero de telefono: 11 xxxx xxxx</h2>
         <h2 class="relleno-contacto">Instagram: @maxi_mayorga</h2>
@@ -144,7 +145,7 @@ session_start();
 
         <div class="musica">
 
-            <iframe src="https://open.spotify.com/embed/playlist/6P75RG9yKcgxUBeHUcccrv?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/6P75RG9yKcgxUBeHUcccrv?utm_source=generator&theme=0" width="1000px" height="200px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
         </div>
 

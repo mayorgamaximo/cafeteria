@@ -18,7 +18,7 @@ audio{
 
 
 
-.container{
+body{
     background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*jA0gzfDcuOvOtKO1FfIMjg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +32,7 @@ main {
     margin-left: 10%;
 }
 
-div {
+.div-index {
     
     display: flex;
     background: rgba(0, 0, 0, 0.7);
@@ -171,15 +171,6 @@ footer {
 background-color: transparent;
 }
 
-input{
-    margin-top: 10px;
-    width: 20%;
-    height: 20px;
-    background-color: rgb(187, 135, 114);
-    border-radius: 10px;
-    border: solid black 2px;
-    padding: 3px;
-}
 .enviar{
     margin-top: 10px;
     height: 25px;
@@ -200,3 +191,23 @@ article{
 .visitas img{
     height: 20px;
 }
+
+/*comentarios*/
+
+.div-comentario{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 20px;
+}
+.comentario{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: beige;
+    text-align: start;
+    
+
+}
+

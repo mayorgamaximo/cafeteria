@@ -36,7 +36,7 @@ session_start();
             <center><input name="mail" type="text"></center>
             <h3>Contraseña</h3>
             <center><input name="contrasena" type="password"></center>
-            <h3>¿todavia no tienes una cuenta?<br><a style="color: blue;" href="register.html">haz clic aqui</a></h3>
+            <h3>¿todavia no tienes una cuenta?<br><a style="color: rgb(0, 140, 255);" href="register.html">haz clic aqui</a></h3>
             <br>
             <center><input type="submit" class="enviar"></center>
 
