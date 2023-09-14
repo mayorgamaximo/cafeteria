@@ -207,7 +207,16 @@ article{
     margin-left: 20px;
     background-color: beige;
     text-align: start;
+    padding: 2px;
     
-
+}
+.enviar{
+    margin-left: 20px;
+    margin-bottom: 30px;
 }
 
+.muestra_comentario{
+   margin-left: 20px;
+   margin-bottom: 10px;
+   color: rgb(218, 183, 141);
+}

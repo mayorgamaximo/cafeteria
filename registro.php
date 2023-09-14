@@ -1,10 +1,11 @@
 <?php 
+session_start();
 
 $servername="localhost";
 $username="phpmyadmin";
 $password="RedesInformaticas";
 $dbname= "db_mayorga";
-$conexion=new mysqli($servernameame,$username,$password,$dbname);
+$conexion=new mysqli($servername,$username,$password,$dbname);
 
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
@@ -25,6 +26,7 @@ if ($fila["total"] > 0) {
 } else {
     
     $sql = "INSERT INTO registro ( `nombre`, `apellido`, `telefono`, `username`,`mail`,`contraseña`) VALUES ( ' $nombre', '$apellido', '$telefono', '$username','$mail','$contrasena');";
+    $_SESSION["infosesion"] = "exito";
 }
 
 

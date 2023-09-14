@@ -39,6 +39,7 @@ session_start();
 
                 $fechavisita = date("y/m/d");
                 $sql = "UPDATE visitas SET contador = '$contador' WHERE visitas.id = 1";
+                $sql = "UPDATE visitas SET fecha = '$fechavisita' WHERE visitas.id = 1";
 
                 if (mysqli_query($conexion, $sql)) {
                 $success = "El ingreso ha sido satisfactorio";

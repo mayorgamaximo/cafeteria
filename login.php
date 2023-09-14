@@ -21,7 +21,7 @@ $fila = $resultado->fetch_assoc();
 if ($fila["total"] > 0) {
     header('Location: index.php');
     $_SESSION["infosesion"] = "exito";
-    $_SESSION["infomail"] = $_POST['mail'];
+    $_SESSION["infonombre"] = $_POST['nombre'];
 
 } else {
 
